@@ -1,0 +1,24 @@
+{
+  "description": "A collection of useful presets and options."
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    ":pinDevDependencies",
+    ":renovatePrefix",
+    ":prNotPending",
+    ":rebaseStalePrs"
+  ]
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["optionalDependencies"],
+      "addLabels": ["optional"]
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions",
+      "automerge": true
+    }
+  ]
+}
