@@ -1,5 +1,5 @@
 {
-  "description": "A collection of useful presets and options."
+  "description": "A collection of useful presets and options.",
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
@@ -8,7 +8,7 @@
     ":renovatePrefix",
     ":prNotPending",
     ":rebaseStalePrs"
-  ]
+  ],
   "labels": ["dependencies"],
   "packageRules": [
     {
