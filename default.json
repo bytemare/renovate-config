@@ -7,7 +7,8 @@
     ":pinDevDependencies",
     ":renovatePrefix",
     ":prNotPending",
-    ":rebaseStalePrs"
+    ":rebaseStalePrs",
+    ":dependencyDashboard"
   ],
   "labels": ["dependencies"],
   "packageRules": [
